@@ -385,7 +385,7 @@
             <div class="container contact-container">
                 <div class="contact-info">
                     <h2>Vamos criar algo incrível juntos?</h2>
-                    <p>Preencha os dados ao lado para falar diretamente com nossa equipe no WhatsApp, ou utilize os canais abaixo.</p>
+                    <p>Entre em contato conosco através dos nossos canais ou venha nos visitar em nossa sede.</p>
                     
                     <div class="contact-details">
                         <a href="https://api.whatsapp.com/send?phone=5583991908585" target="_blank" class="contact-link">
@@ -402,24 +402,54 @@
                         <a href="https://www.instagram.com/impactoagenciaof/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
                         <a href="https://www.youtube.com/@IMPACTOCOMUNICA%C3%87%C3%83OEMARKETING" target="_blank" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
                     </div>
+
+                    <a href="https://api.whatsapp.com/send?phone=5583991908585" target="_blank" class="btn btn-primary btn-block contact-cta-btn">
+                        <i class="ph-bold ph-whatsapp-logo"></i> Iniciar Conversa no WhatsApp
+                    </a>
                 </div>
                 
                 <div class="contact-form-wrapper">
-                    <!-- O formulário usa javascript inline simples para abrir o WhatsApp com a mensagem -->
-                    <form class="contact-form" onsubmit="event.preventDefault(); var nome = document.getElementById('nome').value; var msg = document.getElementById('mensagem').value; var url = 'https://api.whatsapp.com/send?phone=5583991908585&text=' + encodeURIComponent('Olá, me chamo ' + nome + '. ' + msg); window.open(url, '_blank');">
-                        <h3>Iniciar Conversa</h3>
-                        <div class="form-group">
-                            <label for="nome">Seu Nome</label>
-                            <input type="text" id="nome" placeholder="Como podemos te chamar?" required>
+                    <div class="map-container" id="map-trigger">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.088827725969!2d-34.88763842426359!3d-7.115682192887633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810a08e705b%3A0x6b490d1f73b88b7!2sR.%20Gama%20Rosa%2C%2034%20-%20Roger%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058020-210!5e0!3m2!1spt-BR!2sbr!4v1715632000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="map-overlay">
+                            <span class="btn btn-secondary"><i class="ph ph-navigation-arrow"></i> Ver Rotas</span>
                         </div>
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" rows="4" placeholder="Fale um pouco sobre a sua necessidade..." required></textarea>
+                    </div>
+                </div>
+
+                <!-- Modal de Rotas -->
+                <div id="routes-modal" class="modal">
+                    <div class="modal-content animate-modal">
+                        <button class="close-modal">&times;</button>
+                        <h3>Como deseja chegar?</h3>
+                        <p>Escolha seu aplicativo favorito para navegar até a nossa sede.</p>
+                        <div class="routes-grid">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Gama%20Rosa%2C%2034%20-%20Roger%2C%20Jo%C3%A3o%20Pessoa%20-%20PB" target="_blank" class="route-option">
+                                <div class="route-icon google-maps"><i class="ph-fill ph-google-logo"></i></div>
+                                <span>Google Maps</span>
+                            </a>
+                            <a href="https://waze.com/ul?q=Rua%20Gama%20Rosa%2C%2034%20-%20Roger%2C%20Jo%C3%A3o%20Pessoa%20-%20PB&ll=-7.1156822,-34.8876384&navigate=yes" target="_blank" class="route-option">
+                                <div class="route-icon waze"><i class="ph-fill ph-navigation-arrow"></i></div>
+                                <span>Waze</span>
+                            </a>
+                            <a href="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=-7.1156822&dropoff[longitude]=-34.8876384" target="_blank" class="route-option">
+                                <div class="route-icon uber"><i class="ph-fill ph-car"></i></div>
+                                <span>Uber</span>
+                            </a>
+                            <a href="https://99app.com/" target="_blank" class="route-option">
+                                <div class="route-icon taxi-99"><i class="ph-fill ph-taxi"></i></div>
+                                <span>99 Taxi</span>
+                            </a>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="ph-bold ph-whatsapp-logo"></i> Enviar para WhatsApp
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -545,6 +575,28 @@
             const walk = (y - startY) * 1.5;
             marquee.scrollTop = scrollTop - walk;
         }, { passive: true });
+
+        // Modal de Rotas logic
+        const mapTrigger = document.getElementById('map-trigger');
+        const routesModal = document.getElementById('routes-modal');
+        const closeModal = document.querySelector('.close-modal');
+
+        mapTrigger.addEventListener('click', () => {
+            routesModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        });
+
+        closeModal.addEventListener('click', () => {
+            routesModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === routesModal) {
+                routesModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto | Comunicação e Marketing</title>
+    <meta name="description" content="Agência especializada em Gestão de Redes Sociais e Serviço de Podcast.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Imagem de Fundo (Início) -->
+    <div class="hero-bg-wrapper">
+        <!-- O src abaixo aponta para hero-bg.jpg que você deve salvar na pasta -->
+        <div class="hero-bg-image" style="background-image: url('hero-bg.webp');"></div>
+        <div class="hero-bg-overlay"></div>
+    </div>
+    
+    <!-- Efeitos de Fundo (Glows) -->
+    <div class="background-effects">
+        <div class="glow-orange"></div>
+        <div class="glow-purple"></div>
+    </div>
+
+    <!-- Navegação / Cabeçalho -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="logo.webp" alt="Impacto Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+            <a href="#contato" class="nav-cta">Agendar Reunião</a>
+            
+            <!-- Menu Mobile Toggle (Apenas visual para simplicidade por enquanto, pode ser expandido com JS depois) -->
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <span class="hero-badge">Agência de Comunicação e Marketing</span>
+                <h1 class="hero-title">Transforme a Presença Digital da Sua Marca.</h1>
+                <p class="hero-subtitle">Estratégias de alto impacto em Redes Sociais e Produção de Podcasts para conectar, engajar e converter.</p>
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn btn-primary">Conhecer Serviços</a>
+                    <a href="#contato" class="btn btn-secondary">Falar com Especialista</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós Section -->
+        <section id="sobre" class="about-section">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Muito prazer, somos a Impacto.</h2>
+                    <p>Não somos apenas mais uma agência. Somos seus parceiros estratégicos no digital. Nosso foco é construir posicionamento de marca que gera resultados reais através de conteúdo autêntico e produção audiovisual de excelência.</p>
+                </div>
+                <div class="about-stats animate-on-scroll">
+                    <div class="stat-box">
+                        <h3>Alta</h3>
+                        <span>Performance</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Premium</h3>
+                        <span>Qualidade Audiovisual</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipe Section -->
+        <section id="equipe" class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Quem faz acontecer</h2>
+                    <p>Conheça os profissionais por trás das estratégias de alto impacto da nossa agência.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card animate-on-scroll">
+                        <img src="caio.webp" alt="Caio" class="team-photo">
+                        <div class="team-info">
+                            <h3>Caio</h3>
+                            <p>Head de Marketing</p>
+                        </div>
+                    </div>
+                    <div class="team-card animate-on-scroll">
+                        <img src="lucas.webp" alt="Lucas" class="team-photo">
+                        <div class="team-info">
+                            <h3>Lucas</h3>
+                            <p>Head de Marketing</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card animate-on-scroll">
+                        <img src="braz.webp" alt="Braz" class="team-photo">
+                        <div class="team-info">
+                            <h3>Braz</h3>
+                            <p>Filmmaker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <p>Soluções completas para dominar o seu nicho de mercado.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Serviço 1 -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon orange-icon">
+                            <i class="ph ph-device-mobile"></i>
+                        </div>
+                        <h3>Gerenciamento de Redes Sociais</h3>
+                        <p>Estratégia de conteúdo, design premium, calendário editorial e gestão de tráfego orgânico para atrair e engajar a sua audiência ideal.</p>
+                        <ul class="service-features">
+                            <li><i class="ph-bold ph-check"></i> Design e Identidade Visual</li>
+                            <li><i class="ph-bold ph-check"></i> Roteiros para Reels/TikTok</li>
+                            <li><i class="ph-bold ph-check"></i> Relatórios de Crescimento</li>
+                        </ul>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon purple-icon">
+                            <i class="ph ph-microphone-stage"></i>
+                        </div>
+                        <h3>Serviço de Podcast</h3>
+                        <p>Produção audiovisual ponta a ponta. Grave seu podcast com qualidade de estúdio para gerar autoridade e cortes virais nas redes.</p>
+                        <ul class="service-features">
+                            <li><i class="ph-bold ph-check"></i> Captação de Áudio e Vídeo</li>
+                            <li><i class="ph-bold ph-check"></i> Edição Completa</li>
+                            <li><i class="ph-bold ph-check"></i> Geração de Cortes (Shorts/Reels)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfólio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nosso Portfólio</h2>
+                    <p>Veja na prática o nível das nossas entregas.</p>
+                </div>
+
+                <!-- Portfólio Redes Sociais -->
+                <div class="portfolio-group">
+                    <h3 class="portfolio-group-title"><i class="ph ph-instagram-logo"></i> Redes Sociais</h3>
+                    <div class="marquee-wrapper">
+                        <div class="marquee-content social-marquee">
+                            <!-- Conjuntos duplicados para o loop infinito -->
+                            <!-- Cada conjunto agora tem espaço para 10 imagens (redes1 a redes10) -->
+                            <!-- O código 'onerror' esconde o item automaticamente se a imagem não existir na pasta -->
+                            <div class="portfolio-item feed-format"><img src="redes1.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 1"></div>
+                            <div class="portfolio-item feed-format"><img src="redes2.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 2"></div>
+                            <div class="portfolio-item feed-format"><img src="redes3.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 3"></div>
+                            <div class="portfolio-item feed-format"><img src="redes4.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 4"></div>
+                            <div class="portfolio-item feed-format"><img src="redes5.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 5"></div>
+                            <div class="portfolio-item feed-format"><img src="redes6.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 6"></div>
+                            <div class="portfolio-item feed-format"><img src="redes7.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 7"></div>
+                            <div class="portfolio-item feed-format"><img src="redes8.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 8"></div>
+                            <div class="portfolio-item feed-format"><img src="redes9.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 9"></div>
+                            <div class="portfolio-item feed-format"><img src="redes10.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 10"></div>
+                            
+                            <!-- Repetição para Loop -->
+                            <div class="portfolio-item feed-format"><img src="redes1.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 1"></div>
+                            <div class="portfolio-item feed-format"><img src="redes2.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 2"></div>
+                            <div class="portfolio-item feed-format"><img src="redes3.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 3"></div>
+                            <div class="portfolio-item feed-format"><img src="redes4.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 4"></div>
+                            <div class="portfolio-item feed-format"><img src="redes5.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 5"></div>
+                            <div class="portfolio-item feed-format"><img src="redes6.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 6"></div>
+                            <div class="portfolio-item feed-format"><img src="redes7.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 7"></div>
+                            <div class="portfolio-item feed-format"><img src="redes8.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 8"></div>
+                            <div class="portfolio-item feed-format"><img src="redes9.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 9"></div>
+                            <div class="portfolio-item feed-format"><img src="redes10.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 10"></div>
+
+                            <!-- Terceira repetição para telas ultrawide -->
+                            <div class="portfolio-item feed-format"><img src="redes1.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 1"></div>
+                            <div class="portfolio-item feed-format"><img src="redes2.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 2"></div>
+                            <div class="portfolio-item feed-format"><img src="redes3.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 3"></div>
+                            <div class="portfolio-item feed-format"><img src="redes4.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 4"></div>
+                            <div class="portfolio-item feed-format"><img src="redes5.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 5"></div>
+                            <div class="portfolio-item feed-format"><img src="redes6.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 6"></div>
+                            <div class="portfolio-item feed-format"><img src="redes7.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 7"></div>
+                            <div class="portfolio-item feed-format"><img src="redes8.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 8"></div>
+                            <div class="portfolio-item feed-format"><img src="redes9.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 9"></div>
+                            <div class="portfolio-item feed-format"><img src="redes10.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Social 10"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfólio Podcast -->
+                <div class="portfolio-group" style="margin-top: 4rem;">
+                    <h3 class="portfolio-group-title"><i class="ph ph-youtube-logo"></i> Produção de Podcast</h3>
+                    <div class="marquee-wrapper">
+                        <div class="marquee-content podcast-marquee">
+                            <!-- Espaço para 10 Podcasts (podcast1 a podcast10) -->
+                            <div class="portfolio-item video-format"><img src="podcast1.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 1"></div>
+                            <div class="portfolio-item video-format"><img src="podcast2.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 2"></div>
+                            <div class="portfolio-item video-format"><img src="podcast3.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 3"></div>
+                            <div class="portfolio-item video-format"><img src="podcast4.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 4"></div>
+                            <div class="portfolio-item video-format"><img src="podcast5.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 5"></div>
+                            <div class="portfolio-item video-format"><img src="podcast6.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 6"></div>
+                            <div class="portfolio-item video-format"><img src="podcast7.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 7"></div>
+                            <div class="portfolio-item video-format"><img src="podcast8.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 8"></div>
+                            <div class="portfolio-item video-format"><img src="podcast9.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 9"></div>
+                            <div class="portfolio-item video-format"><img src="podcast10.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 10"></div>
+                            
+                            <!-- Repetição 2 -->
+                            <div class="portfolio-item video-format"><img src="podcast1.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 1"></div>
+                            <div class="portfolio-item video-format"><img src="podcast2.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 2"></div>
+                            <div class="portfolio-item video-format"><img src="podcast3.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 3"></div>
+                            <div class="portfolio-item video-format"><img src="podcast4.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 4"></div>
+                            <div class="portfolio-item video-format"><img src="podcast5.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 5"></div>
+                            <div class="portfolio-item video-format"><img src="podcast6.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 6"></div>
+                            <div class="portfolio-item video-format"><img src="podcast7.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 7"></div>
+                            <div class="portfolio-item video-format"><img src="podcast8.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 8"></div>
+                            <div class="portfolio-item video-format"><img src="podcast9.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 9"></div>
+                            <div class="portfolio-item video-format"><img src="podcast10.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 10"></div>
+
+                            <!-- Repetição 3 -->
+                            <div class="portfolio-item video-format"><img src="podcast1.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 1"></div>
+                            <div class="portfolio-item video-format"><img src="podcast2.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 2"></div>
+                            <div class="portfolio-item video-format"><img src="podcast3.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 3"></div>
+                            <div class="portfolio-item video-format"><img src="podcast4.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 4"></div>
+                            <div class="portfolio-item video-format"><img src="podcast5.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 5"></div>
+                            <div class="portfolio-item video-format"><img src="podcast6.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 6"></div>
+                            <div class="portfolio-item video-format"><img src="podcast7.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 7"></div>
+                            <div class="portfolio-item video-format"><img src="podcast8.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 8"></div>
+                            <div class="portfolio-item video-format"><img src="podcast9.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 9"></div>
+                            <div class="portfolio-item video-format"><img src="podcast10.webp" onerror="this.closest('.portfolio-item').style.display='none'" alt="Podcast 10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos Section -->
+        <section id="depoimentos" class="feedback-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O que dizem sobre nós</h2>
+                    <p>A satisfação dos nossos clientes é a nossa melhor propaganda.</p>
+                </div>
+                <div class="whatsapp-marquee-wrapper">
+                    <div class="whatsapp-grid">
+                        <!-- Conjunto 1 -->
+                        <div class="whatsapp-message">
+                            <img src="edu.webp" alt="Edu Sobreira" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Edu Sobreira</div>
+                                <p>Galera, foi muito melhor do que eu imaginava. E acredito que muito em função da condução e do acolhimento da equipe de Marketing da Impacto. Vocês são muito bons e muito competentes. Vinicius de Morais, valorize esses meninos aí pq eles valem ouro heim.<br>E terão outras gravações em breve. Já já vamos marcar.</p>
+                                <span class="wa-time">10:15 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="rafael.webp" alt="Rafael Petrucci" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Rafael Petrucci</div>
+                                <p>Noite massa! Lucas e Caio são figuraços. Os caras são muito profissionais, Valeu galera!</p>
+                                <span class="wa-time">14:30 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="renato.webp" alt="Renato Alves" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Renato Alves</div>
+                                <p>Caras, realmente o sentimento foi de casa. Ambiente e atendimentos dos rapazes muito acolhedor e natural.<br>Estão bem demais!!!</p>
+                                <span class="wa-time">16:42 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="larissa.webp" alt="Larissa Herculano" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Larissa Herculano</div>
+                                <p>Boa tarde, a cobertura de todo o evento foi ótima e muito bem planejada e executada, com uma dedicação notória da parte de toda a equipe Impacto. Obrigada por todo o seu suporte e por fazer parte do nosso LH Day, eternalizando ele através do seu trabalho incrível. ❤️</p>
+                                <span class="wa-time">17:05 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Conjunto 2 -->
+                        <div class="whatsapp-message">
+                            <img src="edu.webp" alt="Edu Sobreira" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Edu Sobreira</div>
+                                <p>Galera, foi muito melhor do que eu imaginava. E acredito que muito em função da condução e do acolhimento da equipe de Marketing da Impacto...</p>
+                                <span class="wa-time">10:15 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="rafael.webp" alt="Rafael Petrucci" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Rafael Petrucci</div>
+                                <p>Noite massa! Lucas e Caio são figuraços. Os caras são muito profissionais, Valeu galera!</p>
+                                <span class="wa-time">14:30 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="renato.webp" alt="Renato Alves" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Renato Alves</div>
+                                <p>Caras, realmente o sentimento foi de casa. Ambiente e atendimentos dos rapazes muito acolhedor e natural.</p>
+                                <span class="wa-time">16:42 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="larissa.webp" alt="Larissa Herculano" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Larissa Herculano</div>
+                                <p>Boa tarde, a cobertura de todo o evento foi ótima e muito bem planejada e executada...</p>
+                                <span class="wa-time">17:05 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Conjunto 3 -->
+                        <div class="whatsapp-message">
+                            <img src="edu.webp" alt="Edu Sobreira" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Edu Sobreira</div>
+                                <p>Galera, foi muito melhor do que eu imaginava...</p>
+                                <span class="wa-time">10:15 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="rafael.webp" alt="Rafael Petrucci" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Rafael Petrucci</div>
+                                <p>Noite massa! Lucas e Caio são figuraços...</p>
+                                <span class="wa-time">14:30 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="renato.webp" alt="Renato Alves" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Renato Alves</div>
+                                <p>Estão bem demais!!!</p>
+                                <span class="wa-time">16:42 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                        <div class="whatsapp-message">
+                            <img src="larissa.webp" alt="Larissa Herculano" class="wa-avatar">
+                            <div class="whatsapp-bubble">
+                                <div class="wa-sender">Larissa Herculano</div>
+                                <p>Obrigada por todo o seu suporte e por fazer parte do nosso LH Day ❤️</p>
+                                <span class="wa-time">17:05 <i class="ph-bold ph-checks" style="color: #53bdeb;"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Vamos criar algo incrível juntos?</h2>
+                    <p>Preencha os dados ao lado para falar diretamente com nossa equipe no WhatsApp, ou utilize os canais abaixo.</p>
+                    
+                    <div class="contact-details">
+                        <a href="https://api.whatsapp.com/send?phone=5583991908585" target="_blank" class="contact-link">
+                            <i class="ph ph-whatsapp-logo"></i>
+                            (83) 99190-8585
+                        </a>
+                        <a href="mailto:contato@impacto.com.br" class="contact-link">
+                            <i class="ph ph-envelope-simple"></i>
+                            contato@impacto.com.br
+                        </a>
+                    </div>
+                    
+                    <div class="contact-socials">
+                        <a href="https://www.instagram.com/impactoagenciaof/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://www.youtube.com/@IMPACTOCOMUNICA%C3%87%C3%83OEMARKETING" target="_blank" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <!-- O formulário usa javascript inline simples para abrir o WhatsApp com a mensagem -->
+                    <form class="contact-form" onsubmit="event.preventDefault(); var nome = document.getElementById('nome').value; var msg = document.getElementById('mensagem').value; var url = 'https://api.whatsapp.com/send?phone=5583991908585&text=' + encodeURIComponent('Olá, me chamo ' + nome + '. ' + msg); window.open(url, '_blank');">
+                        <h3>Iniciar Conversa</h3>
+                        <div class="form-group">
+                            <label for="nome">Seu Nome</label>
+                            <input type="text" id="nome" placeholder="Como podemos te chamar?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" rows="4" placeholder="Fale um pouco sobre a sua necessidade..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="ph-bold ph-whatsapp-logo"></i> Enviar para WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Impacto Comunicação e Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Animação -->
+    <script>
+        // Animação de Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+        // Carrossel de Depoimentos (Infinito Manual 3-Set + Drag)
+        const marquee = document.querySelector('.whatsapp-marquee-wrapper');
+        const grid = document.querySelector('.whatsapp-grid');
+        
+        let isDown = false;
+        let startY;
+        let scrollTop;
+
+        // Centralizar inicial no Conjunto 2
+        window.addEventListener('load', () => {
+            const h = grid.scrollHeight / 3;
+            marquee.scrollTop = h;
+        });
+
+        // Loop Infinito 3-Set
+        marquee.addEventListener('scroll', () => {
+            if (isDown) return; // Não pular enquanto arrasta
+            
+            const h = grid.scrollHeight / 3;
+            if (marquee.scrollTop < h * 0.5) {
+                marquee.scrollTop += h;
+            } else if (marquee.scrollTop > h * 2.5) {
+                marquee.scrollTop -= h;
+            }
+        });
+
+        // Drag to Scroll
+        marquee.addEventListener('mousedown', (e) => {
+            isDown = true;
+            marquee.classList.add('active');
+            marquee.style.scrollSnapType = 'none';
+            startY = e.pageY - marquee.offsetTop;
+            scrollTop = marquee.scrollTop;
+        });
+
+        const stopDragging = () => {
+            if (!isDown) return;
+            isDown = false;
+            marquee.classList.remove('active');
+            marquee.style.scrollSnapType = 'y mandatory';
+            
+            // Ajuste de loop após soltar
+            const h = grid.scrollHeight / 3;
+            if (marquee.scrollTop < h * 0.5) {
+                marquee.scrollTop += h;
+            } else if (marquee.scrollTop > h * 2.5) {
+                marquee.scrollTop -= h;
+            }
+        };
+
+        marquee.addEventListener('mouseleave', stopDragging);
+        marquee.addEventListener('mouseup', stopDragging);
+
+        marquee.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const y = e.pageY - marquee.offsetTop;
+            const walk = (y - startY) * 1.5; // Ajuste de sensibilidade
+            marquee.scrollTop = scrollTop - walk;
+        });
+    </script>
+</body>
+</html>

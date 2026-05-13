@@ -259,6 +259,20 @@ section {
 }
 
 @media (max-width: 768px) {
+    .nav-cta {
+        display: none;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+        height: 80px;
+    }
+
+    .nav-logo img {
+        height: 35px;
+        margin-top: 8px;
+    }
+
     .mobile-menu-btn {
         display: block;
     }
@@ -277,8 +291,11 @@ section {
         z-index: 999;
     }
 
-    .nav-links.active {
+.nav-links.active {
         left: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     .nav-links a {
@@ -288,11 +305,17 @@ section {
 
 /* Hero Section */
 .hero-section {
-    padding: 12rem 0 8rem;
+    padding: 10rem 0 6rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 140px;
+    }
 }
 
 .hero-content {
@@ -317,8 +340,8 @@ section {
 }
 
 .hero-content h1 {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
-    line-height: 1.1;
+    font-size: clamp(2rem, 10vw, 4.5rem);
+    line-height: 1.2;
     margin-bottom: 1.5rem;
     background: linear-gradient(to right, #fff, #a09db0);
     -webkit-background-clip: text;
@@ -336,6 +359,18 @@ section {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -627,7 +662,23 @@ section {
 
 @media (max-width: 768px) {
     .grid-video { grid-template-columns: 1fr; }
-    .video-format { width: 100%; }
+    .video-format { width: 280px; }
+    .feed-format { width: 220px; }
+    
+    .hero-content, .section-header, .service-card, .team-card, .contact-info {
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons, .contact-socials {
+        justify-content: center !important;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
 }
 
 /* Feedbacks (WhatsApp Bubbles) */

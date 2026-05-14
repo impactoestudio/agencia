@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe | Impacto Comunicação e Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orange"></div>
+        <div class="glow-purple"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="logo.webp" alt="Impacto Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="equipe.html" class="active">Equipe</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="clientes.html">Portfólio</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+            </ul>
+            <a href="index.html#contato" class="nav-cta">Agendar Reunião</a>
+            <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 12rem;">
+        <header class="section-header animate-on-scroll">
+            <span class="hero-badge">Quem Faz Acontecer</span>
+            <h1 class="hero-title" style="font-size: 4rem;">Especialistas em Impacto Digital.</h1>
+            <p class="hero-subtitle">Conheça os profissionais dedicados a transformar sua marca em autoridade.</p>
+        </header>
+
+        <section class="team-detailed-grid" style="display: grid; grid-template-columns: 1fr; gap: 6rem; margin-bottom: 8rem;">
+            <!-- Caio -->
+            <div class="team-focus-card animate-on-scroll">
+                <img src="caio.webp" alt="Caio">
+                <div class="team-detail-content">
+                    <span class="role-label">Estrategista Chefe</span>
+                    <h2>Caio</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">Especialista em branding e posicionamento digital. Caio lidera a frente estratégica da Impacto, transformando objetivos de negócio em narrativas de alto engajamento. Sua expertise garante que cada marca encontre sua voz única no mercado.</p>
+                    <div class="team-stats">
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <span>Projetos</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>8 anos</h4>
+                            <span>Experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lucas -->
+            <div class="team-focus-card reverse animate-on-scroll">
+                <div class="team-detail-content" style="text-align: right;">
+                    <span class="role-label">Diretor de Operações</span>
+                    <h2>Lucas</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">Mestre em performance e gestão de tráfego. Lucas é o cérebro por trás da distribuição inteligente de conteúdo, garantindo que a mensagem certa chegue ao público ideal no momento perfeito para converter.</p>
+                    <div class="team-stats" style="justify-content: flex-end;">
+                        <div class="stat-item">
+                            <h4>M+</h4>
+                            <span>Alcance</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>ROI</h4>
+                            <span>Focado</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="lucas.webp" alt="Lucas">
+            </div>
+
+            <!-- Braz -->
+            <div class="team-focus-card animate-on-scroll">
+                <img src="braz.webp" alt="Braz">
+                <div class="team-detail-content">
+                    <span class="role-label">Head de Audiovisual</span>
+                    <h2>Braz</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">Olhar cinematográfico e edição dinâmica. Braz é responsável pela qualidade visual premium da agência, transformando gravações em peças de arte que prendem a atenção do primeiro ao último segundo.</p>
+                    <div class="team-stats">
+                        <div class="stat-item">
+                            <h4>4K</h4>
+                            <span>Qualidade</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Viral</h4>
+                            <span>Retenção</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Impacto Comunicação e Marketing. Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+        
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.querySelector('i').classList.toggle('ph-list');
+            menuBtn.querySelector('i').classList.toggle('ph-x');
+        });
+    </script>
+</body>
+</html>

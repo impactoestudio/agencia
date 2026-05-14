@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços | Impacto Comunicação e Marketing</title>
+    <meta name="description" content="Conheça nossas soluções premium em marketing digital e produção audiovisual.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .service-detail-section { padding: 8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .service-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+        .service-detail-content h2 { font-size: 3rem; margin-bottom: 2rem; background: linear-gradient(to right, #fff, var(--c-orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .service-detail-content p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; line-height: 1.6; }
+        .service-image-container { position: relative; border-radius: var(--border-radius-lg); overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .service-image-container img { width: 100%; height: 600px; object-fit: cover; transition: 0.5s; }
+        .service-image-container:hover img { transform: scale(1.05); }
+        
+        .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        .step { background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: var(--border-radius-md); border-left: 3px solid var(--c-orange); }
+        .step h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: white; }
+        .step p { font-size: 0.9rem; color: var(--text-muted); margin: 0; }
+
+        .service-cta-row { margin-top: 3.5rem; display: flex; gap: 1.5rem; align-items: center; }
+        
+        @media (max-width: 992px) {
+            .service-detail-grid { grid-template-columns: 1fr; gap: 4rem; }
+            .service-detail-content h2 { font-size: 2.5rem; }
+            .service-image-container img { height: 400px; }
+            .process-steps { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orange"></div>
+        <div class="glow-purple"></div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.webp" alt="Impacto Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
+                <li><a href="clientes.html">Portfólio</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+            </ul>
+            <a href="index.html#contato" class="nav-cta">Agendar Reunião</a>
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="clients-hero animate-on-scroll" style="text-align: center; padding-top: 12rem;">
+            <span class="hero-badge">Ecossistema Impacto</span>
+            <h1 class="hero-title" style="font-size: 4rem;">Soluções que Escalão Marcas.</h1>
+            <p class="hero-subtitle">Do planejamento à execução, cuidamos de cada detalhe do seu posicionamento digital.</p>
+        </header>
+
+        <!-- Serviço 1: Redes Sociais -->
+        <section class="service-detail-section animate-on-scroll">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <div class="service-icon orange-icon" style="width: 70px; height: 70px; font-size: 2.5rem; margin-bottom: 2rem;">
+                        <i class="ph ph-device-mobile"></i>
+                    </div>
+                    <h2>Gerenciamento de Redes Sociais</h2>
+                    <p>Sua marca precisa estar onde a atenção do seu cliente está. Desenvolvemos estratégias de conteúdo que não apenas geram curtidas, mas constroem uma comunidade fiel e pronta para comprar.</p>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <h4>Planejamento</h4>
+                            <p>Análise de nicho e definição de pilares de conteúdo.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Produção</h4>
+                            <p>Design premium e roteiros focados em retenção.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Análise</h4>
+                            <p>Otimização constante baseada em dados reais.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-cta-row">
+                        <a href="https://wa.me/5583999622071?text=Olá,%20vi%20o%20serviço%20de%20Redes%20Sociais%20e%20gostaria%20de%20saber%20mais." class="btn btn-primary">Solicitar Orçamento</a>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Resposta em até 24h</span>
+                    </div>
+                </div>
+                <div class="service-image-container">
+                    <img src="redes1.webp" alt="Gestão de Redes Sociais">
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviço 2: Podcast -->
+        <section class="service-detail-section animate-on-scroll">
+            <div class="service-detail-grid">
+                <div class="service-image-container" style="order: 2;">
+                    <img src="podcast1.webp" alt="Produção de Podcast">
+                </div>
+                <div class="service-detail-content" style="order: 1;">
+                    <div class="service-icon purple-icon" style="width: 70px; height: 70px; font-size: 2.5rem; margin-bottom: 2rem;">
+                        <i class="ph ph-microphone-stage"></i>
+                    </div>
+                    <h2>Produção de Podcast Profissional</h2>
+                    <p>O Podcast é a ferramenta definitiva de autoridade. Oferecemos estúdio completo, direção de cena e a famosa técnica de "cortes virais" para multiplicar seu alcance em todas as redes.</p>
+                    
+                    <div class="process-steps">
+                        <div class="step" style="border-color: var(--c-purple);">
+                            <h4>Direção</h4>
+                            <p>Condução profissional para extrair o melhor convidado.</p>
+                        </div>
+                        <div class="step" style="border-color: var(--c-purple);">
+                            <h4>Captação</h4>
+                            <p>Áudio cristalino e vídeo 4K multi-câmera.</p>
+                        </div>
+                        <div class="step" style="border-color: var(--c-purple);">
+                            <h4>Distribuição</h4>
+                            <p>Presença no Spotify, YouTube e Redes Sociais.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-cta-row">
+                        <a href="https://wa.me/5583999622071?text=Olá,%20vi%20o%20serviço%20de%20Podcast%20e%20gostaria%20de%20saber%20mais." class="btn btn-primary">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviço 3: Branding -->
+        <section class="service-detail-section animate-on-scroll" style="border-bottom: none;">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <div class="service-icon orange-icon" style="width: 70px; height: 70px; font-size: 2.5rem; margin-bottom: 2rem;">
+                        <i class="ph ph-palette"></i>
+                    </div>
+                    <h2>Branding e Identidade Visual</h2>
+                    <p>Seu design é o primeiro aperto de mão com o seu cliente. Criamos identidades visuais memoráveis que transmitem o valor real do seu serviço antes mesmo de você falar a primeira palavra.</p>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <h4>Conceito</h4>
+                            <p>Tradução da alma do seu negócio em elementos visuais.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Design</h4>
+                            <p>Criação de logotipo, paleta e tipografia exclusiva.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Manual</h4>
+                            <p>Guia completo para manter a marca consistente.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-cta-row">
+                        <a href="https://wa.me/5583999622071?text=Olá,%20vi%20o%20serviço%20de%20Branding%20e%20gostaria%20de%20saber%20mais." class="btn btn-primary">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="service-image-container">
+                    <img src="redes2.webp" alt="Branding e Identidade Visual">
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section animate-on-scroll" style="text-align: center; padding: 4rem 0 8rem;">
+            <h2>Dúvidas sobre qual o melhor plano para você?</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Fale com um consultor e receba uma análise gratuita do seu perfil.</p>
+            <a href="https://wa.me/5583999622071" class="btn btn-primary" style="background: #25D366; border-color: #25D366;"><i class="ph ph-whatsapp-logo" style="margin-right: 0.5rem;"></i> Consultoria Gratuita</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Impacto Comunicação e Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.querySelector('i').classList.toggle('ph-list');
+            menuBtn.querySelector('i').classList.toggle('ph-x');
+        });
+    </script>
+</body>
+</html>

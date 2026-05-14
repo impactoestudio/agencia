@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Impacto Comunicação e Marketing</title>
+    <meta name="description" content="Nossos cases de sucesso e serviços prestados.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .service-media { width: 100%; height: 100%; object-fit: contain; }
+        .video-player { width: 100%; height: 100%; display: none; }
+        .video-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.3s; z-index: 5; }
+        .video-overlay:hover { background: rgba(0,0,0,0.2); }
+        .play-btn { width: 80px; height: 80px; background: var(--c-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; box-shadow: 0 0 30px rgba(255,107,0,0.5); }
+        .desc-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body class="clients-page">
+
+    <div class="background-effects">
+        <div class="glow-orange"></div>
+        <div class="glow-purple"></div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.webp" alt="Impacto Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="clientes.html" class="active">Portfólio</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+            </ul>
+            <a href="index.html#contato" class="nav-cta">Agendar Reunião</a>
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="clients-hero animate-on-scroll">
+            <span class="hero-badge">Cases de Sucesso</span>
+            <h1 class="hero-title">O Impacto em Detalhes.</h1>
+            <p class="hero-subtitle">Nomes e serviços reais que transformaram marcas no digital.</p>
+        </header>
+
+        <section class="clients-grid">
+            
+            <!-- Cliente 1 -->
+            <div class="client-card animate-on-scroll" id="client-1" data-category="Gerenciamento de Redes Sociais">
+                <div class="client-profile-side">
+                    <img src="cliente1.webp" alt="Eficazz Soluções Contábeis" class="client-photo-main">
+                    <div class="client-info-overlay">
+                        <h3>Eficazz Soluções Contábeis</h3>
+                        <p>Escritório de Contabilidade</p>
+                    </div>
+                </div>
+                <div class="service-showcase-side">
+                    <div class="service-carousel">
+                        <div class="carousel-track-container">
+                            <div class="carousel-track"></div>
+                        </div>
+                        <button class="carousel-btn btn-prev" onclick="moveCarousel('client-1', -1)"><i class="ph ph-caret-left"></i></button>
+                        <button class="carousel-btn btn-next" onclick="moveCarousel('client-1', 1)"><i class="ph ph-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cliente 2 -->
+            <div class="client-card animate-on-scroll" id="client-2" data-category="Identidade Visual" style="transition-delay: 0.1s;">
+                <div class="client-profile-side">
+                    <img src="cliente2.webp" alt="Larissa Herculano" class="client-photo-main">
+                    <div class="client-info-overlay">
+                        <h3>Larissa Herculano</h3>
+                        <p>Moda & Lifestyle</p>
+                    </div>
+                </div>
+                <div class="service-showcase-side">
+                    <div class="service-carousel">
+                        <div class="carousel-track-container">
+                            <div class="carousel-track"></div>
+                        </div>
+                        <button class="carousel-btn btn-prev" onclick="moveCarousel('client-2', -1)"><i class="ph ph-caret-left"></i></button>
+                        <button class="carousel-btn btn-next" onclick="moveCarousel('client-2', 1)"><i class="ph ph-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cliente 3 -->
+            <div class="client-card animate-on-scroll" id="client-3" data-category="Gerenciamento de Redes" style="transition-delay: 0.2s;">
+                <div class="client-profile-side">
+                    <img src="cliente3.webp" alt="Rafael Petrucci" class="client-photo-main">
+                    <div class="client-info-overlay">
+                        <h3>Rafael Petrucci</h3>
+                        <p>Empresário</p>
+                    </div>
+                </div>
+                <div class="service-showcase-side">
+                    <div class="service-carousel">
+                        <div class="carousel-track-container">
+                            <div class="carousel-track"></div>
+                        </div>
+                        <button class="carousel-btn btn-prev" onclick="moveCarousel('client-3', -1)"><i class="ph ph-caret-left"></i></button>
+                        <button class="carousel-btn btn-next" onclick="moveCarousel('client-3', 1)"><i class="ph ph-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cliente 4 -->
+            <div class="client-card animate-on-scroll" id="client-4" data-category="Gerenciamento de Redes" style="transition-delay: 0.3s;">
+                <div class="client-profile-side">
+                    <img src="cliente4.webp" alt="Renato Alves" class="client-photo-main">
+                    <div class="client-info-overlay">
+                        <h3>Renato Alves</h3>
+                        <p>Saúde & Bem-estar</p>
+                    </div>
+                </div>
+                <div class="service-showcase-side">
+                    <div class="service-carousel">
+                        <div class="carousel-track-container">
+                            <div class="carousel-track"></div>
+                        </div>
+                        <button class="carousel-btn btn-prev" onclick="moveCarousel('client-4', -1)"><i class="ph ph-caret-left"></i></button>
+                        <button class="carousel-btn btn-next" onclick="moveCarousel('client-4', 1)"><i class="ph ph-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section animate-on-scroll" style="text-align: center; padding: 4rem 0 8rem;">
+            <h2>Pronto para escalar seu impacto?</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Vamos construir o próximo case de sucesso juntos.</p>
+            <a href="index.html#contato" class="btn btn-primary">Falar com Consultor</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Impacto Comunicação e Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const imgExts = ['webp', 'jpg', 'png', 'jpeg'];
+        const videoExts = ['mp4', 'mov', 'webm'];
+        const maxServices = 10;
+
+        async function initSmartPortfolio() {
+            const clientCards = document.querySelectorAll('.client-card');
+            
+            for (const card of clientCards) {
+                const clientId = card.id.replace('client-', '');
+                const category = card.getAttribute('data-category') || 'Marketing Digital';
+                const track = card.querySelector('.carousel-track');
+                let foundCount = 0;
+
+                for (let i = 1; i <= maxServices; i++) {
+                    const baseName = `servico${clientId}.${i}`;
+                    const media = await detectMedia(baseName);
+                    
+                    if (media) {
+                        const info = getServiceInfo(clientId, i);
+                        const slide = document.createElement('div');
+                        slide.className = 'service-slide';
+                        slide.innerHTML = `
+                            <div class="media-container">
+                                ${media.type === 'video' ? `
+                                    <video class="video-player" src="${media.url}" poster="${media.cover || ''}" controls disablePictureInPicture controlsList="nodownload noplaybackrate" style="display: none; position: relative; z-index: 2;"></video>
+                                    ${media.cover ? 
+                                        `<img src="${media.cover}" class="service-media" style="display: block; position: relative; z-index: 2; cursor: pointer;" onclick="handleVideoPlay(this.parentElement)">` : 
+                                        `<div class="video-placeholder" style="width:100%; height:100%; display: flex; align-items:center; justify-content:center; position: relative; z-index: 2; cursor: pointer;" onclick="handleVideoPlay(this.parentElement)">
+                                            <i class="ph ph-video-camera" style="font-size: 3rem; color: rgba(255,255,255,0.2);"></i>
+                                         </div>`
+                                    }
+                                    <div class="video-overlay" onclick="handleVideoPlay(this.parentElement)" style="z-index: 3;">
+                                        <div class="play-btn"><i class="ph-fill ph-play"></i></div>
+                                    </div>
+                                ` : `
+                                    <img src="${media.url}" class="service-media" style="display: block; position: relative; z-index: 2;">
+                                `}
+                            </div>
+                            <div class="service-description-box">
+                                <div class="desc-header">
+                                    <label>${info.title}</label>
+                                    <span class="client-badge">${category}</span>
+                                </div>
+                                <p>${info.desc}</p>
+                            </div>
+                        `;
+                        track.appendChild(slide);
+                        foundCount++;
+                    }
+                }
+                
+                card.setAttribute('data-total', foundCount);
+                card.setAttribute('data-current', 0);
+                updateCarouselArrows(card);
+            }
+        }
+
+        async function detectMedia(baseName) {
+            let videoUrl = null;
+            let coverUrl = null;
+
+            for (const ext of videoExts) {
+                const url = `${baseName}.${ext}`;
+                if (await checkFile(url)) { videoUrl = url; break; }
+            }
+
+            for (const ext of imgExts) {
+                const url = `${baseName}.${ext}`;
+                if (await checkFile(url)) { coverUrl = url; break; }
+            }
+
+            if (videoUrl) return { type: 'video', url: videoUrl, cover: coverUrl };
+            if (coverUrl) return { type: 'image', url: coverUrl };
+            return null;
+        }
+
+        function checkFile(url) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => resolve(true);
+                img.onerror = () => {
+                    fetch(url, { method: 'HEAD' }).then(res => resolve(res.ok)).catch(() => resolve(false));
+                };
+                img.src = url;
+            });
+        }
+
+        function getServiceInfo(client, service) {
+            const infos = {
+                "1.1": { title: "Criativo de Alta Conversão", desc: "Design estratégico focado em autoridade tributária, unindo clareza visual e copy persuasiva para atrair clientes qualificados." },
+                "1.2": { title: "Vídeo de Posicionamento", desc: "Produção audiovisual premium com captação 4K e edição dinâmica, humanizando a marca contábil e transmitindo confiança imediata." },
+                "2.1": { title: "Fashion Film & Lifestyle", desc: "Captação cinematográfica que traduz a essência da marca em desejo visual, gerando conexão emocional profunda com a audiência." },
+                "3.1": { title: "Estratégia de Autoridade", desc: "Consultoria de imagem e presença audiovisual de alta performance, elevando o patamar do empresário no mercado digital." },
+                "4.1": { title: "Educação & Engajamento", desc: "Gestão de conteúdo estratégico que transforma conhecimento técnico em vídeos curtos envolventes e de fácil consumo." }
+            };
+            return infos[`${client}.${service}`] || { title: "Consultoria Estratégica", desc: "Produção de conteúdo personalizado e gestão de marca com foco em resultados de alto impacto." };
+        }
+
+        function moveCarousel(clientId, direction) {
+            const card = document.getElementById(clientId);
+            const track = card.querySelector('.carousel-track');
+            let current = parseInt(card.getAttribute('data-current'));
+            const total = parseInt(card.getAttribute('data-total'));
+
+            card.querySelectorAll('video').forEach(v => v.pause());
+
+            current += direction;
+            if (current < 0) current = 0;
+            if (current >= total) current = total - 1;
+
+            card.setAttribute('data-current', current);
+            track.style.transform = `translateX(-${current * 100}%)`;
+            updateCarouselArrows(card);
+        }
+
+        function updateCarouselArrows(card) {
+            const current = parseInt(card.getAttribute('data-current'));
+            const total = parseInt(card.getAttribute('data-total'));
+            const btnPrev = card.querySelector('.btn-prev');
+            const btnNext = card.querySelector('.btn-next');
+
+            if (total <= 1) {
+                if(btnPrev) btnPrev.style.display = 'none';
+                if(btnNext) btnNext.style.display = 'none';
+                return;
+            }
+
+            if(btnPrev) btnPrev.style.display = current === 0 ? 'none' : 'flex';
+            if(btnNext) btnNext.style.display = current === total - 1 ? 'none' : 'flex';
+        }
+
+        function handleVideoPlay(container) {
+            const overlay = container.querySelector('.video-overlay');
+            const video = container.querySelector('.video-player');
+            const thumb = container.querySelector('.service-media');
+            const placeholder = container.querySelector('.video-placeholder');
+
+            if (video) {
+                if (overlay) overlay.style.display = 'none';
+                if (thumb) thumb.style.display = 'none';
+                if (placeholder) placeholder.style.display = 'none';
+                video.style.display = 'block';
+                video.play();
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', initSmartPortfolio);
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.querySelector('i').classList.toggle('ph-list');
+            menuBtn.querySelector('i').classList.toggle('ph-x');
+        });
+    </script>
+</body>
+</html>

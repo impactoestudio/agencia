@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Impacto Comunicação e Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .floating-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+        .floating-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius-lg);
+            padding: 3.5rem;
+            transition: var(--transition);
+        }
+        .floating-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 107, 0, 0.3);
+        }
+        .dark-card { background: rgba(0, 0, 0, 0.3); }
+        .light-card { background: rgba(255, 255, 255, 0.05); }
+
+        .values-floating-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 8rem;
+        }
+        .value-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+        .value-card:hover {
+            border-color: var(--c-purple);
+            transform: scale(1.02);
+        }
+        .value-card i { font-size: 3rem; color: var(--c-orange); margin-bottom: 1.5rem; display: block; }
+        .value-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: white; }
+        .value-card p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; }
+
+        @media (max-width: 768px) {
+            .floating-grid { 
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 1.5rem;
+            }
+            .floating-card { padding: 2rem 1.5rem; text-align: center; }
+            .floating-card h2, .floating-card h3 { font-size: 1.4rem; justify-content: center; }
+            .floating-card p, .floating-card li { font-size: 0.95rem; }
+            
+            .values-floating-grid { 
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 1.5rem;
+            }
+            .value-card { padding: 1.5rem; }
+            .value-card h3 { font-size: 1.1rem; }
+            .value-card p { font-size: 0.8rem; }
+        }
+
+        @media (max-width: 480px) {
+            .floating-grid { grid-template-columns: 1fr; }
+            .values-floating-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orange"></div>
+        <div class="glow-purple"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="logo.webp" alt="Impacto Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html" class="active">Sobre</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="clientes.html">Portfólio</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+            </ul>
+            <a href="index.html#contato" class="nav-cta">Agendar Reunião</a>
+            <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 12rem;">
+        <header class="section-header animate-on-scroll">
+            <span class="hero-badge">Nossa Essência</span>
+            <h1 class="hero-title" style="font-size: 4rem;">Pilares de Impacto.</h1>
+        </header>
+
+        <!-- 4 Quadrados Flutuantes (Principais) -->
+        <section class="floating-grid animate-on-scroll">
+            <div class="floating-card dark-card">
+                <h2 style="color: var(--c-orange); font-size: 2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem;">
+                    <i class="ph-bold ph-users-three"></i> Quem Somos
+                </h2>
+                <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.1rem;">Nascemos para elevar o padrão da comunicação digital. Combinamos criatividade artística com análise de dados para garantir que cada conteúdo gere conexão real e resultados mensuráveis para nossos parceiros.</p>
+            </div>
+
+            <div class="floating-card light-card">
+                <h3 style="color: var(--c-purple-light); font-size: 2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem;">
+                    <i class="ph-bold ph-target"></i> Nossa Missão
+                </h3>
+                <ul style="display: flex; flex-direction: column; gap: 1.2rem; color: var(--text-muted);">
+                    <li style="display: flex; gap: 1rem;"><i class="ph-bold ph-check-circle" style="color: var(--c-orange);"></i> <span>Posicionar marcas como autoridades incontestáveis.</span></li>
+                    <li style="display: flex; gap: 1rem;"><i class="ph-bold ph-check-circle" style="color: var(--c-orange);"></i> <span>Inovar constantemente em formatos audiovisuais.</span></li>
+                    <li style="display: flex; gap: 1rem;"><i class="ph-bold ph-check-circle" style="color: var(--c-orange);"></i> <span>Escalar o crescimento através do digital estratégico.</span></li>
+                </ul>
+            </div>
+
+            <div class="floating-card light-card">
+                <h3 style="color: var(--c-orange); font-size: 2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem;">
+                    <i class="ph-bold ph-rocket-launch"></i> Nossa Visão
+                </h3>
+                <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.1rem;">Ser a agência de referência nacional em estratégia audiovisual, reconhecida por transformar marcas comuns em líderes de mercado através da excelência técnica e criativa.</p>
+            </div>
+
+            <div class="floating-card dark-card">
+                <h3 style="color: var(--c-purple-light); font-size: 2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem;">
+                    <i class="ph-bold ph-crown"></i> Nossos Valores
+                </h3>
+                <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.1rem;">Comprometimento total com a entrega de valor, ética inegociável na condução dos negócios e a busca incessante pela perfeição estética em cada frame produzido.</p>
+            </div>
+        </section>
+
+
+        <!-- 3 Quadrados (Valores Detalhados) -->
+        <section class="values-floating-grid animate-on-scroll">
+            <div class="value-card">
+                <i class="ph ph-shield-check"></i>
+                <h3>Transparência</h3>
+                <p>Relatórios claros e comunicação direta. Você sempre saberá exatamente onde seu investimento está gerando frutos.</p>
+            </div>
+            <div class="value-card">
+                <i class="ph ph-crown"></i>
+                <h3>Qualidade</h3>
+                <p>Padrão cinematográfico. Não entregamos apenas conteúdo, entregamos experiências visuais de altíssimo nível.</p>
+            </div>
+            <div class="value-card">
+                <i class="ph ph-users-three"></i>
+                <h3>Parceria</h3>
+                <p>O seu sucesso é o nosso termômetro. Trabalhamos como uma extensão do seu time, focados no mesmo objetivo.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Impacto Comunicação e Marketing. Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+        
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.querySelector('i').classList.toggle('ph-list');
+            menuBtn.querySelector('i').classList.toggle('ph-x');
+        });
+    </script>
+</body>
+</html>
